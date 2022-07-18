@@ -1,0 +1,728 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://www.zayascilia.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2020-12-09/iao.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi/2022-01-03/obi.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2022-04-25/ro.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002330"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002330 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002330"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#AVPU_measurement_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#AVPU_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a process that uses a standardized assessment algorithm to determine a patient&apos;s level of consciousness.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on http://purl.obolibrary.org/obo/NCIT_C60832</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">AVPU criterion:  &quot;alert&quot;, &quot;responsive to verbal stimulation&quot;, &quot;responsive to painful stimulation&quot;, or &quot;unresponsive&quot; to determine a patient&apos;s level of consciousness</rdfs:comment>
+        <rdfs:label xml:lang="en">Alert, Voice, Pain, Unresonsiveness (AVPU) measurment datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#AVPU_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#AVPU_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a scoring process that has specifed input AVPU measurement datum.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">AVPU criterion:  &quot;alert&quot;, &quot;responsive to verbal stimulation&quot;, &quot;responsive to painful stimulation&quot;, or &quot;unresponsive&quot; to determine a patient&apos;s level of consciousness</rdfs:comment>
+        <rdfs:label xml:lang="en">Alert, Voice, Pain, Unresponsiveness (AVPU) measurement datum score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#body_temperature_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#body_temperature_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a scoring process that has specified input body temperature measurement datum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">body temperature measurement datum score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#body_temperature_measurment_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#body_temperature_measurment_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum of the temperature of a part of the human body.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/VSO_0000007</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">body temperature measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#clinical_deterioration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#clinical_deterioration">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">The process of the diminishing realization of the patient&apos;s vital functions.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">R. M. Padilla and A. M. Mayo, “Clinical deterioration: A concept analysis,” J Clin Nurs, vol. 27, no. 7–8, pp. 1360–1368, Apr. 2018, doi: 10.1111/jocn.14238.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">clinical deterioration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#early_warning_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#early_warning_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#clinical_deterioration"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about clinical deterioration and is the specified output of a planned process.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Smith MEB, Chiovaro J, O’Neil M, Kansagara D, Quinones A, Freeman M, Motu’apuaka M, Slatore CG. Early Warning Scoring Systems: A Systematic Review. VA-ESP Project #05-225; 2013</obo:IAO_0000119>
+        <dc:description xml:lang="en">The early warning score is derived by assigning a numeric value to several physiologic parameters (e.g., systolic blood pressure, heart rate, and respiratory rate) to recognize the early signs of clinical deterioration. When the early warning score is paired with a trigger to a human healthcare provider the intention is to prompt early intervention and management, such as increasing nursing attention, informing the provider, or activating a rapid response / medical emergency team on behalf of the human patient at risk of physiological derangements.</dc:description>
+        <rdfs:comment xml:lang="en">Also known as, track and trigger systems, track and trigger tools, physiological track and trigger warning systems.</rdfs:comment>
+        <rdfs:label xml:lang="en">early warning score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#glasgow_coma_scale_measurement_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#glasgow_coma_scale_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a process that uses a standardized rating scale to evaluate the level of consciousness and overall status of the central nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on http://purl.obolibrary.org/obo/NCIT_C124710</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">glasgow coma scale measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#glasgow_coma_scale_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#glasgow_coma_scale_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a scoring process that has specifed input glasgow coma scale score measurement datum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">glasgow coma scale measurement datum score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#heart_rate_measurement_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#heart_rate_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum of the number of heartbeats per unit of time, usually expressed as beats per minute.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on http://purl.obolibrary.org/obo/NCIT_C49677</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">heart rate measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#heart_rate_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#heart_rate_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a scoring process that has specified input heart rate measurement datum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">heart rate measurement datum score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_scoring_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#early_warning_score"/>
+        <obo:IAO_0000115 xml:lang="en">An early warning score that is the specified output of a planned process that has specified input respiratory rate, blood pressure, urine output, heart rate, AVPU, and body temperature measurement data.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Stenhouse C, Coates S, Tivey M, Allsop P, Parker T. Prospective evaluation of a modified Early Warning Score to aid earlier detection of patients developing critical illness on a general surgical ward [Abstract] Br J Anaesth. 1999;84:663P. 
+
+Morgan RJM, Williams F, Wright MM. An early warning scoring system for detecting developing critical illness. Clin Intensive Care. 1997;8:100
+
+Subbe CP, Kruger M, Rutherford P, Gemmel L. Validation of a modified Early Warning Score in medical admissions. Q J Med. 2001;94:507–10.</obo:IAO_0000119>
+        <dc:description xml:lang="en">The modifed Early Warning Score is an early warning score proposed by Stenhouse et al., in 1999 as a modification of the early warning score developed by Morgan et al., in 1997.   Determining a modified early warning score score involves assigning a number between 0 and 3 to each of six physiological parameters, respiratory rate, temperature, systolic blood pressure, heart rate, level of consciousness, and urine output..   The sum of the scores of the six physiological parameters yields the human patient&apos;s total modified early warning score score.  Escalation trigger is typically a total score of 4 or greater.</dc:description>
+        <rdfs:label xml:lang="en">six-item modified early warning score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_scoring_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_scoring_process">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#AVPU_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#body_temperature_measurment_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#heart_rate_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#urine_output_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#AVPU_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#body_temperature_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#heart_rate_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#urine_output_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">Is a planned process that assigns a score to six measurement datum based on a predefined rubric and has specified output respiratory rate measurement datum score, systolic blood pressure measurement data score, urine output measurement datum score, heart rate measurement datum score, AVPU measurement datum score, and body temperature measurement datum score.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">six-item modified early warning score scoring process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">Is a planned process that provides the sum total of six measurement datum score,  respiratory rate measurement datum score, systolic blood pressure measurement data score, urine output measurement datum score, heart rate measurement datum score, AVPU measurement datum score, and body temperature measurement datum score.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">six-item modified early warning score summation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_scoring_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#early_warning_score"/>
+        <obo:IAO_0000115 xml:lang="en">An early warning score that is the specified output of a planned process that has specified input respiratory rate, systolic blood pressure, heart rate, Alert, Voice, Pain, Unresponsiveness (AVPU), body temperature, oxygen saturation, and supplemental oxygen measurement data.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Royal College of  Physicians. National Early Warning Score (NEWS): Standardising the assessment of acute illness.</obo:IAO_0000119>
+        <dc:description xml:lang="en">The National Early Warning Score is an early warning score made up of six physiological measurements, respiratory rate, oxygen saturation, temperature, systolic blood pressure, heart rate, level of consciousness, and one observational measure for people who need supplemental oxygen to keep their oxygen saturation at the recommended level. Each measure is scored from 0 to 3 and added together to give an overall score with an additional two points for supplemental oxygen.  Scores lie between 0 and 20, with higher scores resulting from worse physiological measurements.</dc:description>
+        <rdfs:label xml:lang="en">national early warning score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_scoring_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_scoring_process">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#AVPU_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#body_temperature_measurment_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#heart_rate_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#oxygen_saturation_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#supplemental_oxygen_use_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#AVPU_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#body_temperature_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#heart_rate_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#oxygen_saturation_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#supplemental_oxygen_use_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">Is a planned process that assigns a score to seven measurement datum based on a predefined rubric and has specified output respiratory rate measurement datum score, systolic blood pressure measurement datum score, heart rate measurement datum score, AVPU measurement datum score, body temperature measurement datum score, oxygen saturation measurement datum score, and supplemental oxygen use measurement datum score.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">national early warning score scoring process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">Is a planned process that provides the sum total of seven measurement datum scores, respiratory rate measurement datum score, systolic blood pressure measurement datum score, heart rate measurement datum score, AVPU measurement datum score, body temperature measurement datum score, oxygen saturation measurement datum score, and supplemental oxygen use measurement datum score.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">national early warning score summation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#oxygen_saturation_measurement_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#oxygen_saturation_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">The measurement datum of the ratio of oxygenated hemoglobin to total hemoglobin in the blood.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on http://purl.obolibrary.org/obo/NCIT_C60832</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">oxygen saturation measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#oxygen_saturation_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#oxygen_saturation_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a scoring process that has specified input oxygen saturation measurement datum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">oxygen saturation measurement datum score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_scoring_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#early_warning_score"/>
+        <obo:IAO_0000115 xml:lang="en">An early warning score that is the specified output of a planned process that has specified input Glasgow coma scale, respiratory rate, and blood pressure measurement data.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Wagner T, Sinning C, Haumann J, et al. qSOFA Score Is Useful to Assess Disease Severity in Patients With Heart Failure in the Setting of a Heart Failure Unit (HFU). Frontiers in Cardiovascular Medicine. 2020;7. doi:10.3389/fcvm.2020.574768.</obo:IAO_0000119>
+        <dc:description xml:lang="en">Calculatng the quick Sequential Organ Failure Assessment score involves assigning one point for each of three criteria: (1) respiratory rate &gt;=22 breaths / minute, (2) altered mental status (Glasgow Coma Scale &lt;15), or (3) systolic blood pressure &lt;=100mm Hg. The sum of the scores of the three physiological parameters yields the human patient&apos;s quick Sequential Organ Failure Assessment score.  Escalation trigger is typically a total score of 2 or greater, which is suggestive of sepsis.</dc:description>
+        <rdfs:label xml:lang="en">quick sequential organ failure assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_scoring_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_scoring_process">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#glasgow_coma_scale_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#glasgow_coma_scale_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum_score"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">Is a planned process that assigns a score to three measurement datum based on a predefined rubric and has specified output glasgow coma scale measurement datum score, respiratory rate measurement datum score, and systolic blood pressure measurement data score.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">quick sequential organ failure assessment scoring process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_summation_process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_summation_process">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">Is a planned process that provides the sum total of three measurement datum score,  glasgow coma scale measurement datum score, respiratory rate measurement datum score, and systolic blood pressure measurement data score.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">quick sequential organ failure assessment score summation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">The measurement datum of the rate at which an organism breathes.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Based on http://purl.obolibrary.org/obo/VSO_0000034</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">respiratory rate measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#respiratory_rate_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a scoring process that has specified input respiratory rate measurement datum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">respiratory rate measurement datum score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#supplemental_oxygen_use_measurement_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#supplemental_oxygen_use_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum of a patient&apos;s use of supplemental oxygen.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">supplemental oxygen use measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#supplemental_oxygen_use_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#supplemental_oxygen_use_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>A measurement datum that is the specified output of a scoring process that has specified input supplemental oxygen use measurement datum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">supplemental oxygen use measurement datum score.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum of the maximum pressure exerted into the systemic artierial circulation during the contraction of the left ventricle of the heart.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Homan TD, Bordes S, Cichowski E. Physiology, Pulse Pressure. [Updated 2021 Jul 15]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2022 Jan-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK482408/</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">systolic blood pressure measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#systolic_blood_pressure_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#national_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#quick_sequential_organ_failure_assessment_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a scoring process that has specified input systolic blood pressure measurement datum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">systolic blood pressure measurement datum score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#urine_output_measurement_datum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#urine_output_measurement_datum">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum of a patient&apos;s urine output over a specified period of time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">urine output measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#urine_output_measurement_datum_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#urine_output_measurement_datum_score">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zayascilia/ontologies/2022/3/untitled-ontology-8#modified_early_warning_score_summation_process"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the specified output of a scoring process that has specified input urine output measurement datum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">urine output measurement datum score</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

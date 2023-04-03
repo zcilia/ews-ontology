@@ -17,6 +17,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://www.zayascilia.owl">
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/zcilia/ews-ontology/main/src/ontology/import.owl"/>
     </owl:Ontology>
     
